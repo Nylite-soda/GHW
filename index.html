@@ -30,6 +30,24 @@
                     <button class="get-started">Get Started</button>
                 </div>
             </div>
+            <div class="mobilemenu" id="ham"
+            onclick="import('./scripts/handleActive.js').then(toggle => toggle.handleMobileNav())">
+                <ul>
+                    <li class="hamburger top-burger"></li>
+                    <li class="hamburger mid-burger"></li>
+                    <li class="hamburger bottom-burger"></li>
+                </ul>
+            </div>
+            <div class="dropdown-menu">
+                <ul class="flex">
+                    <li><a href="/" class="items">Home</a></li>
+                    <li><a href="#" class="items">About Us</a></li>
+                    <li><a href="#" class="items">Our Services</a></li>
+                    <li><a href="/shopreview" class="items">Features</a></li>
+                    <li><a href="/contact" class="items">Contact Us</a></li>
+    
+                </ul>
+            </div>
         </nav>
 
         <section class="hero">
@@ -73,47 +91,53 @@
                 <div class="container-text flex">
                     <div class="container-header">Our Core Values</div>
                     <p>We achieve our mission through a client-centric approach that prioritizes understanding their unique 
-                        <br>needs and delivering tailored solutions</p>
+                        needs and delivering tailored solutions</p>
                 </div>
                 <div class="container-carousel">
-                    <div class="carousel flex">
-                        <div class="carousel-item flex">
-                            <img src="images/1.png" alt="">
-                            <div class="carousel-item-header">Integrity</div>
-                            <div class="carousel-item-text">Commitment to honesty, transparency, and ethical practices in all interactions with clients, partners, and stakeholders. It's the foundation upon which we build our lasting relationships</div>
-                        </div>
-    
-                        <div class="carousel-item flex">
-                            <img src="images/2.png" alt="">
-                            <div class="carousel-item-header">Expertise</div>
-                            <div class="carousel-item-text">With years of experience in the field of Water Works, we have the expertise to deliver solutions that meet the specific needs of our clients</div>
-                        </div>
-    
-                        <div class="carousel-item flex">
-                            <img src="images/3.png" alt="">
-                            <div class="carousel-item-header">Excellence</div>
-                            <div class="carousel-item-text">Striving for excellence in every aspect of service delivery, from the quality of workmanship to the effectiveness of solutions provided</div>
-                        </div>
-    
-                        <div class="carousel-item flex">
-                            <img src="images/4.png" alt="">
-                            <div class="carousel-item-header">Customer Focus</div>
-                            <div class="carousel-item-text">Placing the needs and satisfaction of clients at the forefront of every decision and action, ensuring a positive and fulfilling experience for all stakeholders.</div>
-                        </div>
-    
-                        <div class="carousel-item flex">
-                            <img src="images/5.png" alt="">
-                            <div class="carousel-item-header">Sustainability</div>
-                            <div class="carousel-item-text">A commitment to environmental responsibility and sustainable practices in water management, ensuring the long-term health and viability of water resources.</div>
-                        </div>
-    
-                        <div class="carousel-item flex">
-                            <div class="img-6 flex">6</div>
-                            <div class="carousel-item-header">Empowerment</div>
-                            <div class="carousel-item-text">Empowering clients and communities through knowledge-sharing, education, and collaboration to make informed decisions about water management and conservation.</div>
-                        </div>
+                    <div class="carousel carousel-cv">
+                      <div class="carousel-item cv-carousel-item flex">
+                        <img src="images/1.png" alt="">
+                        <div class="carousel-item-header">Integrity</div>
+                        <div class="carousel-item-text">Commitment to honesty, transparency, and ethical practices in all interactions with clients, partners, and stakeholders. It's the foundation upon which we build our lasting relationships.</div>
+                      </div>
+                  
+                      <div class="carousel-item cv-carousel-item flex">
+                        <img src="images/2.png" alt="">
+                        <div class="carousel-item-header">Expertise</div>
+                        <div class="carousel-item-text">With years of experience in the field of Water Works, we have the expertise to deliver solutions that meet the specific needs of our clients.</div>
+                      </div>
+                  
+                      <div class="carousel-item cv-carousel-item flex">
+                        <img src="images/3.png" alt="">
+                        <div class="carousel-item-header">Excellence</div>
+                        <div class="carousel-item-text">Striving for excellence in every aspect of service delivery, from the quality of workmanship to the effectiveness of solutions provided.</div>
+                      </div>
+                  
+                      <div class="carousel-item cv-carousel-item flex">
+                        <img src="images/4.png" alt="">
+                        <div class="carousel-item-header">Customer Focus</div>
+                        <div class="carousel-item-text">Placing the needs and satisfaction of clients at the forefront of every decision and action, ensuring a positive and fulfilling experience for all stakeholders.</div>
+                      </div>
+                  
+                      <div class="carousel-item cv-carousel-item flex">
+                        <img src="images/5.png" alt="">
+                        <div class="carousel-item-header">Sustainability</div>
+                        <div class="carousel-item-text">A commitment to environmental responsibility and sustainable practices in water management, ensuring the long-term health and viability of water resources.</div>
+                      </div>
+                  
+                      <div class="carousel-item cv-carousel-item flex">
+                        <div class="img-6 flex">6</div>
+                        <div class="carousel-item-header">Empowerment</div>
+                        <div class="carousel-item-text">Empowering clients and communities through knowledge-sharing, education, and collaboration to make informed decisions about water management and conservation.</div>
+                      </div>
                     </div>
-                </div>
+                    <div class="indicators indicators-cv">
+                      <span class="cv-dot dot active" data-index="0"></span>
+                      <span class="cv-dot dot" data-index="1"></span>
+                      <span class="cv-dot dot" data-index="2"></span>
+                    </div>
+                  </div>
+                  
             </div>
         </section>
 
@@ -203,36 +227,41 @@
                     <p class="subtext">Glass House Waters believes in providing customized water management solutions tailored to each client's unique needs. Our team of experts is committed to delivering high-quality water services that are reliable, sustainable and cost-effective. We take pride in our work and are dedicated to exceeding our clients' expectations.</p>
                 </div>
                 <div class="container-carousel">
-                    <div class="carousel flex">
-                        <div class="carousel-item flex wcu1">
+                    <div class="carousel carousel-wcu flex">
+                        <div class="carousel-item wcu-carousel-item flex wcu1">
                             <div class="carousel-item-header">Expertise and Precision</div>
                             <div class="carousel-item-text">With years of experience in the industry, our skilled technicians bring expertise and precision to every water installation project. Whether it's installing a new water supply system, upgrading existing infrastructure, or fitting plumbing fixtures, we ensure that every installation is done right the first time.</div>
                         </div>
     
-                        <div class="carousel-item flex wcu2">
+                        <div class="carousel-item wcu-carousel-item flex wcu2">
                             <div class="carousel-item-header">Customized Solutions</div>
                             <div class="carousel-item-text">We recognize that every property has unique water requirements. We tailor our solutions to meet your specific needs. Whether you're building a new home, renovating a commercial space, or expanding an industrial facility, we have the expertise to design and install a water system that fits your requirements perfectly</div>
                         </div>
     
-                        <div class="carousel-item flex wcu3">
+                        <div class="carousel-item wcu-carousel-item flex wcu3">
                             <div class="carousel-item-header">Quality Materials and Workmanship</div>
                             <div class="carousel-item-text">We believe in using only the highest quality materials and delivering workmanship of the highest standards. From pipes and fittings to pumps and valves, we source premium products from trusted manufacturers to ensure the reliability and durability of your water installations</div>
                         </div>
     
-                        <div class="carousel-item flex wcu4">
+                        <div class="carousel-item wcu-carousel-item flex wcu4">
                             <div class="carousel-item-header">Efficiency and Reliability</div>
                             <div class="carousel-item-text">Our water installations are designed for efficiency and reliability, ensuring consistent water flow, minimal waste, and optimal performance. Whether you're filling a glass of water or running a commercial operation, you can trust that your water installations will meet your needs reliably and efficiently</div>
                         </div>
     
-                        <div class="carousel-item flex wcu5">
+                        <div class="carousel-item wcu-carousel-item flex wcu5">
                             <div class="carousel-item-header">Comprehensive Services</div>
                             <div class="carousel-item-text">From initial design and planning to installation, testing, and maintenance, Glass House Waters offers comprehensive services to meet all your water installation needs. Our team is with you every step of the way, providing expert guidance and support to ensure the success of your project</div>
                         </div>
     
-                        <div class="carousel-item flex wcu6">
+                        <div class="carousel-item wcu-carousel-item flex wcu6">
                             <div class="carousel-item-header">Customer Satisfaction Guaranteed</div>
                             <div class="carousel-item-text">At Glass House Waters, customer satisfaction is our top priority. We go above and beyond to ensure that our clients are happy with the results of our work. From timely communication to attention to detail, we strive to exceed your expectations in every aspect of our service</div>
                         </div>
+                    </div>
+                    <div class="indicators indicators-wcu">
+                      <span class="wcu-dot dot active" data-index="0"></span>
+                      <span class="wcu-dot dot" data-index="1"></span>
+                      <span class="wcu-dot dot" data-index="2"></span>
                     </div>
                 </div>
             </div>
@@ -279,5 +308,7 @@
             <p>&copy; 2023 Glasshouse Waters. All rights reserved.</p>
         </div>
     </footer>
+
+    <script type="module" src="scripts/index.js"></script>
 </body>
 </html>
