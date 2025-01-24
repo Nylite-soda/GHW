@@ -620,13 +620,13 @@ main{
     }
 
     .hero{
-        min-height: 350px;
+        min-height: 250px;
     }
     .hero::before{
-        min-height: 355px;
+        min-height: 255px;
     }
     .hero .container{
-        padding: 10vw 20px 0 30px;
+        padding: 5vw 20px 0 30px;
     }
     .hero-img{
         display: flex;

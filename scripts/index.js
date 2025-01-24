@@ -2,7 +2,7 @@
 function setupCarousel(carouselSelector, dotSelector, prevSelector, nextSelector, section) {
   const carouselInner = document.querySelector(carouselSelector);
   const items = carouselInner.querySelectorAll('.carousel-item');
-  let dots = document.querySelectorAll(dotSelector);
+  let dots;
   const prevBtn = document.querySelector(prevSelector);
   const nextBtn = document.querySelector(nextSelector);
 
@@ -31,6 +31,7 @@ function setupCarousel(carouselSelector, dotSelector, prevSelector, nextSelector
 
     // Update active dot
     dots = document.querySelectorAll(dotSelector);
+    addDotListener(dots);
     dots.forEach(dot => dot.classList.remove('active'));
     dots[window.innerWidth > 1200 ? currentIndex/2 : currentIndex].classList.add('active');
   }
@@ -63,13 +64,16 @@ function setupCarousel(carouselSelector, dotSelector, prevSelector, nextSelector
       autoSlideInterval = startAutoSlide();
     });
   }
-  dots.forEach((dot, index) => {
-    dot.addEventListener('click', () => {
-      clearInterval(autoSlideInterval);
-      goToSlide(index);
-      autoSlideInterval = startAutoSlide();
+  
+  function addDotListener(dots){
+    dots.forEach((dot, index) => {
+      dot.addEventListener('click', () => {
+        clearInterval(autoSlideInterval);
+        goToSlide(index);
+        autoSlideInterval = startAutoSlide();
+      });
     });
-  });
+  }
 
   goToSlide(currentIndex);
 }
