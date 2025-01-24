@@ -626,7 +626,7 @@ main{
         min-height: 355px;
     }
     .hero .container{
-        padding-right: 20px;
+        padding: 10vw 20px 0 30px;
     }
     .hero-img{
         display: flex;
@@ -641,6 +641,7 @@ main{
     }
     .hero-text{
         top: 0;
+        min-width: 45%;
     }
     .hero-text h1{
         font-size: 6.5vw;
@@ -701,14 +702,14 @@ main{
         max-width: 400px;
         margin:  0;
         box-sizing: border-box;
-        padding: 20px; 
+        padding: 10px 20px 20px !important; 
     }
     .carousel-item-header {
         font-size: 22px; 
         line-height: 28px;
     }
     .carousel-item-text {
-        font-size: 16px; 
+        font-size: clamp(11px, 3.5vw, 15px); 
         line-height: 22px; 
         margin-top: 10px;
     }
