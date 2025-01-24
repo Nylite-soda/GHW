@@ -580,7 +580,7 @@ main{
         top: 65px;
         right: 0;
         background-color: #002B6F;
-        width: 60vw;
+        width: 70vw;
         max-width: 275px;
         height: 100vh;
         z-index: 999;
@@ -589,8 +589,8 @@ main{
         flex-direction: column;
         list-style: none;
         gap: 10px;
-        padding-top: 20px;
-        width: 80%;
+        padding-top: 30px;
+        width: 90%;
         justify-content: flex-start;
     }
     .dropdown-menu ul li{
@@ -661,7 +661,7 @@ main{
         color: #002B6F;
         font-weight: 500;
         letter-spacing: -0.5px;
-        font-size: 1.5vw;
+        font-size: 2vw;
     }
 
     .about{
