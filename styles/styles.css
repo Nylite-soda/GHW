@@ -532,7 +532,7 @@ main{
     .navbar{
         position: sticky;
         top: 0;
-        padding: 2vw 5vw;
+        padding: 10px 5vw;
         background-color: #002B6F;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     }
@@ -596,10 +596,21 @@ main{
         text-decoration: none;
         text-transform: uppercase;
         font-weight: 550;
+        font-size: 20px;
         color: #fff;
         letter-spacing: 1px;
         padding: 0.5em 0.9em 0.5em 1.5em;
         transition: 0.2s ease-in-out;
+    }
+    .dropdown-menu ul li a:active, .dropdown-menu ul li a:hover{
+        background-color: #C7FFD6;
+        color: #002B6F;
+        border-radius: 0;
+        font-weight: 500;
+    }
+
+    .dropdown-menu.active{
+        display: flex;
     }
 
     .hero{
