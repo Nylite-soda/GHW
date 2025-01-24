@@ -194,7 +194,6 @@ main{
 }
 
 .about-img img{
-    height: 411px;
     width: 450px;
     max-width: 100%;
     border-radius: 12px;
@@ -202,11 +201,9 @@ main{
 
 .about-text{
     flex-direction: column;
-    /* width: 100%; */
     max-width: 550px;
     font-size: 20px;
     line-height: 26px;
-    /* letter-spacing: 0.1px; */
 }
 
 .about-header{
@@ -326,13 +323,7 @@ main{
 }
 
 .service-grid{
-    /* display: grid; */
-    /* grid-template-columns: 400px 400px 400px; */
     justify-content: center;
-    /* column-gap: 20px; */
-    /* row-gap: 30px; */
-    /* padding: 80px 60px; */
-    
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
@@ -529,10 +520,21 @@ main{
 
 
 @media screen and (max-width: 1200px){
+    .logo h1{
+        font-size: 17px;
+    }
+    .logo img{
+        height: 30px;
+    }
+    .logo{
+        gap: 10px;
+    }
+
+    
     .navbar{
         position: sticky;
         top: 0;
-        padding: 10px 5vw;
+        padding: 8px 5vw;
         background-color: #002B6F;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     }
@@ -544,6 +546,7 @@ main{
     .mobilemenu {
         display: block;
         padding: 10px;
+        transform: scale(0.8);
     }
     .mobilemenu ul{
         list-style-type: none;
@@ -618,25 +621,74 @@ main{
     }
     .hero .container{
         flex-wrap: wrap;
+        padding-right: 20px;
+        height: 100%;
     }
     .hero-img{
-        position: absolute;
-        bottom: -30vw;
-        right: 3vw;
+        display: flex;
+        width: 100%;
+        position: relative;
+        bottom: -10vw;
         z-index: 1;
+        justify-content: flex-end;
     }
     .hero-img img{
+        right: 3vw;
         height: 50vw;
         min-height: 300px;
         max-height: 470px;
     }
+    .hero-text{
+        top: 0;
+        width: 80%;
+    }
+    .hero-text h1{
+        font-size: 40px;
+        font-weight: 700;
+        letter-spacing: -1px;
+        line-height: 45px;
+    }  
+    .hero-text p{
+        font-size: 17px;
+        margin-top: 10px;
+        line-height: 25px;
+        letter-spacing: -0.2px;
+    }
+    .hero-text .get-started{
+        width: 160px;
+        height: 50px;
+        margin-top: 45px;
+        color: #002B6F;
+        font-weight: 500;
+        letter-spacing: -0.5px;
+        font-size: 17px;
+    }
 
     .about{
-        padding: 100px 0;
+        padding: 80px 0 30px;
+    }
+    .about-text{
+        max-width: 550px;
+        font-size: 16px;
+        line-height: 23px;
+    }
+    .about-header{
+        font-size: 22px;
+        margin-bottom: 7px;
     }
     
     .container{
         padding-left: clamp(35px, 3vw, 55px);
+    }
+
+    .container-header{
+        font-size: 24px;
+    }
+
+    .container-text{
+        font-size: 16px;
+        line-height: 20px;
+        margin-bottom: 7px;
     }
 
     .container-carousel{
@@ -661,6 +713,13 @@ main{
         margin-top: 10px;
     }
 
+    .services-header{
+        font-size: 26px;
+    }
+    .subtext{
+        font-size: 16px;
+    }
+
     .service-grid {
         display: flex;
         flex-wrap: wrap;
@@ -674,12 +733,18 @@ main{
         width: 90%;
     }
 
-    .BAA-form, .data-row{
+    .BAA-form, .data-row, .form-data, .message{
         width: 100%;
     }
 
-    .form-data, .message{
-        width: 80%;
+    .form-data{
+        padding-inline-start: 10px;
+        font-size: 16px;
+        height: 40px;
+    }
+    .message{
+        font-size: 16px;
+        padding: 10px;
     }
 
     .amico-img img{
