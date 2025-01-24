@@ -120,7 +120,7 @@ main{
     background-position: 50% 70%;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 50vw;
+    height: 55vw;
     max-height: 900px;
     width: 100%;
     min-height: 690px;
@@ -131,7 +131,7 @@ main{
     background-image: url('../images/Wave.png');
     width: 100%;
     min-height: 690px;
-    height: 50vw;
+    height: 55vw;
     max-height: 900px;
     background-repeat: no-repeat;
     position: absolute;
@@ -296,7 +296,9 @@ main{
 }
 
 .dot.active {
-  background-color: #002B6F;
+    transition: ease-in-out 0.7s;
+    transform: scale(1.1);
+    background-color: #002B6F;
 }
 
 .img-6{
@@ -468,6 +470,7 @@ main{
 }
 
 .why-choose-us .container .container-carousel .carousel .carousel-item{
+    height: 340px;
     align-self: flex-start;
     padding: 25px;
     border-radius: 12px;
@@ -617,55 +620,52 @@ main{
     }
 
     .hero{
-        display: block;
+        min-height: 350px;
+    }
+    .hero::before{
+        min-height: 355px;
     }
     .hero .container{
-        flex-wrap: wrap;
         padding-right: 20px;
-        height: 100%;
     }
     .hero-img{
         display: flex;
-        width: 100%;
         position: relative;
-        bottom: -10vw;
         z-index: 1;
         justify-content: flex-end;
     }
     .hero-img img{
         right: 3vw;
         height: 50vw;
-        min-height: 300px;
-        max-height: 470px;
+        max-height: 360px;
     }
     .hero-text{
         top: 0;
-        width: 80%;
     }
     .hero-text h1{
-        font-size: 40px;
+        font-size: 5.7vw;
         font-weight: 700;
-        letter-spacing: -1px;
-        line-height: 45px;
+        letter-spacing: -0.7px;
+        line-height: 6.2vw;
     }  
     .hero-text p{
-        font-size: 17px;
-        margin-top: 10px;
-        line-height: 25px;
+        font-size: 2vw;
+        margin-top: 5px;
+        line-height: 2.3vw;
         letter-spacing: -0.2px;
     }
     .hero-text .get-started{
-        width: 160px;
-        height: 50px;
-        margin-top: 45px;
+        width: 40%;
+        height: 5vw;
+        margin-top: 25px;
         color: #002B6F;
         font-weight: 500;
         letter-spacing: -0.5px;
-        font-size: 17px;
+        font-size: 1.5vw;
     }
 
     .about{
-        padding: 80px 0 30px;
+        padding: 0 0 30px;
     }
     .about-text{
         max-width: 550px;
